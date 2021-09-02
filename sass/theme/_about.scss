@@ -1,0 +1,195 @@
+.page-About {
+	.section-heading {
+		p {
+			max-width: 1000px;
+			width: 100%;
+			a {
+				text-transform: initial;
+				color: $color-primary;
+				text-decoration: underline;
+			}
+		}
+	}
+	.section-values {
+		max-width: 1000px;
+		width: 100%;
+		margin: auto;
+		h2 {
+			font-size: clamp(1.5rem, 4vw, 32px);
+			margin-bottom: 4rem;
+			text-align: center;
+		}
+		.value {
+			h4 {
+				color: $color-primary;
+				font-weight: 600;
+				font-size: clamp(1.4rem, 3vw, 24px);
+			}
+			hr {
+				margin: 1.2rem 0 10px;
+				border-top: 1px solid $color-primary;
+			}
+		}
+	}
+}
+
+.section-team {
+	.team {
+		h3 {
+			margin: 3rem 0;
+			font: 600 clamp(1.4rem, 4vw, 32px) $poppins;
+			text-align: center;
+		}
+		.row {
+			max-width: 1200px;
+			margin: 3rem auto;
+			.col-md-6 {
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+				.person {
+					position: relative;
+					border-radius: 8px;
+					overflow: hidden;
+					cursor: pointer;
+					transition: 0.5s ease-in-out;
+					&:hover {
+						.person-info {
+							bottom: 0;
+							transition: 0.5s ease-in-out;
+						}
+					}
+					img {
+						max-height: 650px;
+						object-fit: cover;
+						width: 100%;
+						object-position: top;
+					}
+					.person-info {
+						transition: 0.5s ease-in-out;
+						padding: 4rem 2rem 2rem;
+						clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+						max-height: 180px;
+						background-color: $color-secondary;
+						position: absolute;
+						bottom: -90px;
+						left: 0;
+						right: 0;
+						h4 {
+							color: $color-light;
+							font: 600 clamp(1.2rem, 4vw, 26px) $poppins;
+						}
+						.info-title {
+							display: flex;
+							justify-content: space-between;
+							span {
+								color: $color-light;
+								font: 400 12px $nunito-sans;
+								&:nth-of-type(2) {
+									text-transform: initial;
+								}
+							}
+						}
+					}
+				}
+			}
+			.col-md-4 {
+				.person {
+					position: relative;
+					border-radius: 8px;
+					overflow: hidden;
+					cursor: pointer;
+					transition: 0.5s ease-in-out;
+					&:hover {
+						.person-info {
+							bottom: 0;
+							transition: 0.5s ease-in-out;
+						}
+					}
+					img {
+						max-height: 400px;
+						object-fit: cover;
+						width: 100%;
+						object-position: top;
+					}
+					.person-info {
+						transition: 0.5s ease-in-out;
+						padding: 4rem 2rem 2rem;
+						clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+						max-height: 180px;
+						background-color: $color-secondary;
+						position: absolute;
+						bottom: -90px;
+						left: 0;
+						right: 0;
+						h4 {
+							color: $color-light;
+							font: 600 clamp(1.2rem, 4vw, 26px) $poppins;
+						}
+						.info-title {
+							display: flex;
+							justify-content: space-between;
+							span {
+								color: $color-light;
+								font: 400 13px $nunito-sans;
+								&:nth-of-type(2) {
+									text-transform: initial;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.three-col {
+			max-width: 1100px;
+		}
+	}
+	.admin-team {
+		.row {
+			.col-md-4 {
+				.person .person-info {
+					background-color: $color-primary-light;
+				}
+			}
+		}
+	}
+}
+
+.section-careers {
+	.col-img {
+		img {
+			width: 100%;
+			max-height: 700px;
+			object-fit: cover;
+		}
+		.caption {
+			font: 400 18px $nunito-sans;
+			color: $color-anchor-secondary;
+			text-align: center;
+			padding: 1.5rem 0;
+			display: flex;
+			justify-content: center;
+		}
+	}
+	.col-text {
+		max-width: 1000px;
+		width: 100%;
+		h4 {
+			font-size: clamp(1.5rem, 3vw, 2rem);
+		}
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+			padding-inline-start: 1.4rem;
+			li {
+				font-size: 18px;
+				font-weight: 600;
+				&::marker {
+					font-size: 23px;
+					color: $color-primary;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap");
+$container-max-widths: (
+	xl: 1440px,
+) !default;
+// Color Scheme
+$color-primary: #d51525;
+$color-primary-100: #ff192c;
+$color-primary-light: #f1747e;
+$color-secondary: #f9413e;
+$color-secondary-light: #fc9e9c;
+$color-gradient-3: linear-gradient(to right, #ffb9b4, #f9413e, #d51525);
+// $color-gradient-3: linear-gradient(to right, #ff6358, #f9413e, #d51525);
+$color-gradient-2: linear-gradient(to right, #d51525, #f9413e);
+$color-light: #fff;
+$color-text: #1a252a;
+$color-anchor: #28282b;
+$color-anchor-secondary: #939393;
+$color-bg: #333;
+// Fonts
+$poppins: "Poppins", sans-serif;
+$nunito-sans: "Nunito Sans", sans-serif;
